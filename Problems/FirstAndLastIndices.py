@@ -13,21 +13,7 @@
 class Solution: 
   def getRange(self, arr, target):
     # Fill this in.
-    leftSide = 0
-    rightSide = arr[len(arr)-1]
-    foundAt = [-1, -1]
-    while leftSide != rightSide:
-      if arr[leftSide] == target and foundAt[0] == -1:
-        foundAt[0] = leftSide 
-      if arr[rightSide] == target and foundAt[1] == -1:
-        foundAt[1] = rightSide
-      if foundAt[0] == -1:
-        leftSide += 1
-      if foundAt[1] == -1:
-        rightSide -= 1
-      if foundAt[0] != -1 and foundAt[1] != -1:
-        break
-    return foundAt
+    
   
 # Test program 
 arr = [1, 2, 2, 2, 2, 3, 4, 7, 8, 8] 
