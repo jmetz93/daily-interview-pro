@@ -18,7 +18,11 @@
 
 class Solution:
   def isValid(self, s):
-    # Fill this in.
+    brackets = ['()', '{}', '[]'] 
+    while any(x in s for x in brackets): 
+        for br in brackets: 
+            s = s.replace(br, '') 
+    return not s 
 
 # Test Program
 s = "()(){(())" 
