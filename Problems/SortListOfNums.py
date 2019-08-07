@@ -12,16 +12,11 @@ def sortNums(nums):
   # nums.sort()
   # return nums
 
-  for index in range(1,len(nums)):
-        value = nums[index]
-        i = index-1
-        while i>=0:
-            if value < nums[i]:
-                nums[i+1] = nums[i]
-                nums[i] = value
-                i -= 1
-            else:
-                break
+  n = len(nums)
+  for i in range(n):
+      for j in range(1,n):
+          if nums[j-1] > nums[j]:
+              (nums[j-1], nums[j]) = (nums[j], nums[j-1])
   return nums
 
 print sortNums([3, 3, 2, 1, 3, 2, 1])
