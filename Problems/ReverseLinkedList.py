@@ -58,7 +58,9 @@ node3.next = testTail
 print("Initial list: ")
 testHead.printList()
 # 4 3 2 1 0
-# testHead.reverseIteratively(testHead)
+
+# Uncomment or comment out the function calls based on what you want to test
+testHead.reverseIteratively(testHead)
 testHead.reverseRecursively(testHead)
 print("List after reversal: ")
 testTail.printList()
