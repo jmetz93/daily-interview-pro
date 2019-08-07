@@ -14,7 +14,7 @@ class Solution:
   def getRange(self, arr, target):
     # Fill this in.
     leftSide = 0
-    rightSide = arr[len(arr)-1]
+    rightSide = len(arr)-1
     foundAt = [-1, -1]
     while leftSide != rightSide:
       if arr[leftSide] == target and foundAt[0] == -1:
