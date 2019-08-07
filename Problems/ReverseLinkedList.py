@@ -22,9 +22,17 @@ class ListNode(object):
   # Iterative Solution
   def reverseIteratively(self, head):
     # Implement this.
+    prev = None
+    current = head 
+    while(current is not None): 
+        next = current.next
+        current.next = prev 
+        prev = current 
+        current = next
+    return prev
 
   # Recursive Solution      
-  def reverseRecursively(self, head):
+  # def reverseRecursively(self, head):
     # Implement this.
 
 # Test Program
