@@ -10,6 +10,8 @@ If you attempt working on these from the Unsolved branch and want to test your s
 
 ```bash
 $ cd /path/to/daily-interview-pro
+$ git checkout unsolved
+*** after doing work on a problem ***
 $ cd Problems
 $ python <name-of-file>.py
 ```
