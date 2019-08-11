@@ -10,8 +10,8 @@ def two_sum(list, k):
   # Fill this in.
   nums = {}
   for x in list:
-    diff = k - x
-    if str(diff) in nums:
+    diff = str(k - x)
+    if diff in nums:
       return True
     else:
       nums[str(x)] = True 
